@@ -24,10 +24,10 @@ struct MessageCell: View {
                 Text("@meyvelikahve")
                     .foregroundColor(.gray)
                 
-                Text("You: Selam, nasılsın?")
+                Text("You: Hi, what's up?")
             }
             Spacer(minLength: 0)
-            Text("10/05/21")
+            Text("20/05/24")
                 .foregroundColor(.gray)
         }
         .padding(.vertical, 5)

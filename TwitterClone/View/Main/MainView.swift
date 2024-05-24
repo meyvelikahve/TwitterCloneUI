@@ -9,12 +9,14 @@ import SwiftUI
 
 struct MainView: View {
     
+    let user: UserModel
+    
     @State var width = UIScreen.main.bounds.width - 90
     @State var x = -UIScreen.main.bounds.width + 90
     
     var body: some View {
         
-        NavigationView {
+        NavigationStack {
             VStack {
                 
                 ZStack(alignment: Alignment(horizontal: .leading, vertical: .center)) {
@@ -26,13 +28,10 @@ struct MainView: View {
                         
                     }
                     
-                    
-                    
                     SlideMenu()
                         .shadow(color: Color.black.opacity(x != 0 ? 0.1 : 0), radius: 5, x: 5, y: 0)
                         .offset(x: x)
                         .background(Color.black.opacity(x == 0 ? 0.5 : 0).ignoresSafeArea(.all, edges: .vertical).onTapGesture {
-                            
                             
                             withAnimation{
                                 
@@ -45,7 +44,6 @@ struct MainView: View {
                     withAnimation{
                         
                         if value.translation.width > 0{
-                            
                             
                             if x < 0{
                                 
@@ -64,7 +62,7 @@ struct MainView: View {
                 }).onEnded({ (value) in
                     
                     withAnimation{
-                                                
+                        
                         if -x < width / 2{
                             
                             x = 0
@@ -78,9 +76,7 @@ struct MainView: View {
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)
-
+            
         }
-        
-        
     }
 }

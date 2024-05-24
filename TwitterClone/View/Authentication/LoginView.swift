@@ -8,7 +8,9 @@
 
 import SwiftUI
 
-struct LogInView: View {
+struct LoginView: View {
+    
+    @EnvironmentObject var viewModel: AuthViewModel
     
     @State var email = ""
     @State var password = ""
@@ -54,6 +56,7 @@ struct LogInView: View {
                 
                 VStack {
                     Button(action: {
+                        
                         emailDone.toggle()
                     }, label: {
                         Capsule()
@@ -110,7 +113,8 @@ struct LogInView: View {
                 
                 VStack {
                     Button(action: {
-                        
+                        print("pressed")
+                        self.viewModel.login(email: email, password: password)
                     }, label: {
                         Capsule()
                             .frame(width: 360, height: 40, alignment: .center)
@@ -132,7 +136,7 @@ struct LogInView: View {
 
 struct LogInView_Previews: PreviewProvider {
     static var previews: some View {
-        LogInView()
+        LoginView()
     }
 }
 

@@ -37,6 +37,9 @@
 		D469C54D2BF778D000975C5D /* CustomAuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D469C54C2BF778D000975C5D /* CustomAuthTextField.swift */; };
 		D469C54F2BF778EC00975C5D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D469C54E2BF778EC00975C5D /* WelcomeView.swift */; };
 		D469C5512BF7790900975C5D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D469C5502BF7790900975C5D /* RegisterView.swift */; };
+		D469C5532BFC888C00975C5D /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D469C5522BFC888C00975C5D /* AuthViewModel.swift */; };
+		D469C5552BFC88B400975C5D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D469C5542BFC88B400975C5D /* UserModel.swift */; };
+		D469C5572BFF3EFD00975C5D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D469C5562BFF3EFD00975C5D /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +74,9 @@
 		D469C54C2BF778D000975C5D /* CustomAuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAuthTextField.swift; sourceTree = "<group>"; };
 		D469C54E2BF778EC00975C5D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		D469C5502BF7790900975C5D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		D469C5522BFC888C00975C5D /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		D469C5542BFC88B400975C5D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		D469C5562BFF3EFD00975C5D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,7 @@
 		D457C4CF2BEB68A5000F889F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D469C5522BFC888C00975C5D /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -151,6 +158,7 @@
 		D457C4D02BEB68AD000F889F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D469C5542BFC88B400975C5D /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,6 +166,7 @@
 		D457C4D12BEB68BA000F889F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D469C5562BFF3EFD00975C5D /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -344,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D457C4F92BEBC82C000F889F /* SearchUserCell.swift in Sources */,
+				D469C5572BFF3EFD00975C5D /* AuthService.swift in Sources */,
 				D457C4E12BEB6BBF000F889F /* SearchView.swift in Sources */,
 				D457C4F52BEBC1AC000F889F /* SearchCell.swift in Sources */,
 				D457C4C22BEB6789000F889F /* ContentView.swift in Sources */,
@@ -351,6 +361,7 @@
 				D457C4DF2BEB6B9A000F889F /* Feed.swift in Sources */,
 				D43E4C3D2BED58C300BB0AA7 /* MenuButton.swift in Sources */,
 				D43E4C372BED52B800BB0AA7 /* MainView.swift in Sources */,
+				D469C5552BFC88B400975C5D /* UserModel.swift in Sources */,
 				D469C5512BF7790900975C5D /* RegisterView.swift in Sources */,
 				D457C4EF2BEB724A000F889F /* AssetsStrings.swift in Sources */,
 				D457C4DC2BEB69A9000F889F /* Home.swift in Sources */,
@@ -367,6 +378,7 @@
 				D43E4C432BEFEAC000BB0AA7 /* TabButton.swift in Sources */,
 				D43E4C3F2BEFDB6B00BB0AA7 /* ProfileView.swift in Sources */,
 				D457C4F72BEBC2A7000F889F /* SearchBarView.swift in Sources */,
+				D469C5532BFC888C00975C5D /* AuthViewModel.swift in Sources */,
 				D43E4C332BED4F0400BB0AA7 /* MessageCell.swift in Sources */,
 				D457C4C02BEB6789000F889F /* TwitterCloneApp.swift in Sources */,
 				D457C4E32BEB6BCB000F889F /* NotificationsView.swift in Sources */,

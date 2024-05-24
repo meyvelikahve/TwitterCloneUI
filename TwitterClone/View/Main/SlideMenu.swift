@@ -20,11 +20,18 @@ struct SlideMenu: View {
                 VStack{
                     HStack(spacing: 0){
                         VStack(alignment: .leading){
-                            Image("me")
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 60,height: 60)
-                                .clipShape(Circle())
+                            NavigationLink {
+                                ProfileView()
+                            } label: {
+                                Image("me")
+                                    .resizable()
+                                    .scaledToFill()
+                                    .frame(width: 60,height: 60)
+                                    .clipShape(Circle())
+                            }
+
+                            
+                                
                             
                             HStack(alignment: .top, spacing: 12){
                                 VStack (alignment: .leading, spacing: 12){

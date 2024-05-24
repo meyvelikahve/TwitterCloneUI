@@ -45,7 +45,7 @@ struct ProfileView: View {
                         ZStack{
                             
                             // Banner...
-                            Image("banner")
+                            Image("logo")
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: getRect().width, height: minY > 0 ? 180 + minY : 180, alignment: .center)
@@ -124,23 +124,25 @@ struct ProfileView: View {
                         Text("@meyvelikahve")
                             .foregroundColor(.gray)
                         
-                        Text("Make education not fail! 4️⃣2️⃣ Founder @TurmaApp soon.. @ProbableApp")
+                        Text("Welcome to my profile. Welcome to my profile. Welcome to my profile.")
                         
                         HStack(spacing: 5){
                             
-                            Text("13")
-                                .foregroundColor(.primary)
-                                .fontWeight(.semibold)
                             
-                            Text("Followers")
-                                .foregroundColor(.gray)
                             
-                            Text("680")
+                            Text("8")
                                 .foregroundColor(.primary)
                                 .fontWeight(.semibold)
                                 .padding(.leading,10)
                             
                             Text("Following")
+                                .foregroundColor(.gray)
+                            
+                            Text("16")
+                                .foregroundColor(.primary)
+                                .fontWeight(.semibold)
+                            
+                            Text("Followers")
                                 .foregroundColor(.gray)
                         }
                         .padding(.top,8)
@@ -205,13 +207,13 @@ struct ProfileView: View {
                     VStack(spacing: 18) {
                         
                         // Sample Tweets...
-                        TweetCellView(tweet: "Hey Tim, are those regular glasses? #WWDC2020", tweetImage: "post")
+                        TweetCellView(tweet: "I'm back", tweetImage: "post")
                         
                         Divider()
                         
                         ForEach(1...20,id: \.self){_ in
                             
-                            TweetCellView(tweet: "sampleText")
+                            TweetCellView(tweet: "sampleTextsampleTextsampleTextsampleTextsampleTextsampleTextsampleText")
                             
                             Divider()
                         }
